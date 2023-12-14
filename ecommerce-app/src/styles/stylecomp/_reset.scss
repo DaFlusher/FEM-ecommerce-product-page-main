@@ -18,9 +18,10 @@ body{
             padding: 0 variables.$base-padding*12;
             align-items: bottom;
             column-gap: 2rem;
+            row-gap: 0.5rem;
             position: absolute;
-            top: 65%;
-            transform: translateY(-65%);
+            top: 64%;
+            transform: translateY(-64%);
         }
 
         @media (min-width:1400px) {

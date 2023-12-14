@@ -41,6 +41,11 @@ section.light-box{
                 padding: variables.$padding-sm ;
                 border-radius: 1rem;
                 box-sizing: border-box;
+                &:hover{
+                    border: 2px solid map-get(variables.$primary, 'orange');
+                    transform: scale(0.9);
+                    opacity: 0.5;
+                }
                 @media (max-width: 1160px) {
                     display: none;
                   }

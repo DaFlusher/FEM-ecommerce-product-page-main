@@ -6,6 +6,7 @@ import './styles/style.scss';
 import Nav from './Components/Nav';
 import Hero from './Components/Hero';
 import Main from './Components/Container/Main';
+import Footer from './Components/Footer';
 
 
 
@@ -31,7 +32,12 @@ function App() {
       	  < div className='heroGrid'>
       	    <Hero/>
       	    <Main/>
+            <div className='footer'>
+              <Footer/>
+            </div>
+           
         </div>
+        
       </CartNumberContext.Provider>
       
     </div>

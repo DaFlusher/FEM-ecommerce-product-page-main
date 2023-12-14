@@ -1,0 +1,16 @@
+@use '../stylecomp/variables';
+
+div.footer{
+   text-align: center;
+   grid-area: 2/span 2;
+   padding: variables.$base-padding;
+   font-size: variables.$font-size-sm;
+   color: map-get(variables.$neutral, 'darkgrayblue');
+   font-weight: 700;
+   a{
+    color: map-get(variables.$primary, 'orange');
+    &:hover{
+       color: lighten(map-get(variables.$primary, 'orange'),12%);
+    }
+   }
+}

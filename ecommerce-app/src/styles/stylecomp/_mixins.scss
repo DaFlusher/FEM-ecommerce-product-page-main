@@ -13,7 +13,10 @@
         color: map-get(variables.$neutral, 'white');
         width: 100%;
         text-wrap: nowrap;
-        box-shadow: variables.$base-box-shadow
+        box-shadow: variables.$base-box-shadow;
+        &:hover{
+            background-color: lighten( map-get(variables.$primary, 'orange'),8%)
+        }
         
 }
 
