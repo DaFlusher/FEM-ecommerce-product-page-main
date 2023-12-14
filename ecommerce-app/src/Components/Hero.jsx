@@ -56,10 +56,10 @@ const Hero = () => {
              close={() => setOpen(false)}
              slides={[
                 
-               { src: "/src/images/image-product-1.jpg" },
-               { src: "/src/images/image-product-2.jpg" },
-               { src: "/src/images/image-product-3.jpg" },
-               { src: "/src/images/image-product-4.jpg" },
+               { src: "../images/image-product-1.jpg" },
+               { src: "../images/image-product-2.jpg" },
+               { src: "../images/image-product-3.jpg" },
+               { src: "../images/image-product-4.jpg" },
              ]}
                     plugins={[Thumbnails]}
             thumbnails={{ ref: thumbnailsRef }}
