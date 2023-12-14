@@ -50,16 +50,16 @@ const Hero = () => {
                 <img src={imgNav.next} alt="next button" className="next" role='button' onClick={() => setOpen(true)}/>
             </div>
         
-            {images.map((image)=> <img src={image.thumbnail} onClick={() => setOpen(true)} role='button' className='thumbnail-flex'/>)}
+            {images.map((image)=> <img src={image.thumbnail} onClick={() => setOpen(true)} role='button' className='thumbnail-flex' alt='thumbnails'/>)}
             <Lightbox
              open={open}
              close={() => setOpen(false)}
              slides={[
                 
-               { src: productOne },
-               { src: productTwo },
-               { src: productThree },
-               { src: productFour },
+               { src: productOne, alt: 'product one' },
+               { src: productTwo , alt: 'product two'},
+               { src: productThree, alt: 'product two' },
+               { src: productFour, alt: 'product three' },
              ]}
                     plugins={[Thumbnails]}
             thumbnails={{ ref: thumbnailsRef }}
