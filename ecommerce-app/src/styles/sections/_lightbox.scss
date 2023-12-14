@@ -1,0 +1,48 @@
+@use '../stylecomp/variables';
+
+
+section.light-box{
+    
+    text-align: center;
+        div.bg{
+            @media (min-width: 1160px){
+                border-radius: 0.75rem;
+                
+            }
+            img{
+                position: absolute;
+                top: 30%;
+                transform: translateY(-30%);
+                background-color: white;
+                border-radius: 50%;
+                min-width: 1rem;
+                height: 0.75rem;
+                padding: 0.75rem;
+                @media (min-width: 1160px){
+                    display: none;
+                }
+            }
+            img.previous{
+                left: 5px;
+
+            }
+
+            img.next{
+                right: 5px;
+            }
+        }
+            
+            img.thumbnail-flex{
+                max-width: 6.25rem; /* Adjust as needed */
+                max-height: 6.25rem; 
+                cursor: pointer;
+                display: inline-block;
+                margin-top: variables.$base-margin;
+                padding: variables.$padding-sm ;
+                border-radius: 1rem;
+                box-sizing: border-box;
+                @media (max-width: 1159px) {
+                    display: none;
+                  }
+            }
+}

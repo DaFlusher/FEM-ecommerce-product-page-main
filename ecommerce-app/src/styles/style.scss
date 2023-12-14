@@ -1,0 +1,10 @@
+@use './stylecomp/variables';
+@use './stylecomp/reset';
+@use './stylecomp/mixins';
+
+
+@use './sections/nav';
+@use './sections/hero';
+@use './sections/lightbox';
+@use './sections/sneaker';
+@use './sections/cart';

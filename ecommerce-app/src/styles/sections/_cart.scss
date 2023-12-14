@@ -1,0 +1,92 @@
+@use '../stylecomp/variables';
+@use 'sass:math';
+
+section.cart{
+    @media (max-width:1160px)
+        {display: none;
+        padding: variables.$base-padding variables.$padding-md;
+        position: absolute;
+        min-height: 10rem;
+        top: 3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        width: 80%;
+        background-color:map-get(variables.$neutral, 'white');
+        border-radius: 0.25rem;
+        box-shadow: variables.$box-shadow;}
+
+    @media(min-width:1159px){
+        display: none;
+        min-height: 150px;
+        padding: variables.$base-padding variables.$padding-md;
+        position: absolute;
+        top: 0;
+        right: 168px;
+        z-index: 2;
+        width: 30%;
+        background-color:map-get(variables.$neutral, 'white');
+        border-radius: 0.25rem;
+        box-shadow: variables.$box-shadow;}
+            
+    }
+    h4{
+        color: map-get(variables.$neutral, 'darkblue');
+        font-size: variables.$base-font-size;
+        margin: 0;
+        padding-bottom: variables.$padding-sm;
+    }
+
+    hr{
+        margin: 0;
+        border: 0.1px solid map-get(variables.$neutral, 'grayblue');
+        opacity: 0.3;
+        
+    }
+
+    div{
+        p.empty{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            
+            color: map-get(variables.$neutral, 'darkgrayblue');
+            font-weight: map-get(variables.$font-weights,'bold');
+            font-size: 0.875rem;
+
+        }
+        padding: 0;
+        
+        div.flex{
+            display: grid;
+            grid-template-columns: 40px 2fr 20px;
+            align-items: center;
+            column-gap: 1rem;
+            grid-auto-rows: minmax(100px,auto);
+            padding: 0;
+            img{
+                max-width: 2.5rem;
+                border-radius: 0.25rem;       
+           }
+
+           div.cart-details{
+            padding: 0;
+            color: map-get(variables.$neutral, 'darkgrayblue');
+            font-weight: map-get(variables.$font-weights,'medium');
+
+            h5{
+                margin: 0;
+                font-weight: map-get(variables.$font-weights,'medium');
+                
+            }
+            p{
+                margin: 0;
+            }
+           }
+
+        }
+        
+
+    
+    }

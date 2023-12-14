@@ -1,0 +1,47 @@
+//colors
+$primary:(
+    'orange': hsl(26, 100%, 55%),
+    'paleorange': hsl(25, 100%, 94%)
+);
+
+$neutral:(
+    'darkblue':hsl(220, 13%, 13%),
+    'darkgrayblue': hsl(219, 9%, 45%),
+    'grayblue': hsl(220, 14%, 75%),
+    'grayblue-o': rgba(182, 188, 200,0.4),
+    'lightgrayblue':hsl(223, 64%, 98%),
+    'white': hsl(0, 0%, 100%),
+    'bglighthouse': rgba(0, 0, 0,0.75)
+);
+
+//base styling
+
+//spacing variables
+$base-padding: 0.75rem;
+$padding-sm: 0.5rem;
+$padding-lg: 1rem;
+$base-margin: 0.75rem;
+$padding-md:1.25rem;
+
+//border variables
+$base-border-thickness: 1px;
+$base-border-radius: 0.75rem;
+
+
+//box-shadows
+$base-box-shadow: 8px 8px 20px rgba(255, 125, 26,0.3);
+$box-shadow: 8px 8px 20px rgba(29, 32, 37,0.3);
+
+
+//font sizes
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.875;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;
+
+//programming hub font  weights
+$font-weights:(
+    'medium':400,
+    'bold':700,
+);

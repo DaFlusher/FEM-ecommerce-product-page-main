@@ -1,0 +1,107 @@
+@use '../stylecomp/variables';
+
+div.sneaker{
+    section{
+        
+        h3{
+            color:map-get(variables.$primary, 'orange');
+            font-size: variables.$font-size-sm;
+            margin: 0;
+            padding: variables.$base-padding variables.$padding-md;
+
+        }
+
+        h1.pricing{
+            padding: variables.$padding-sm variables.$padding-md;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            position: relative;
+        }
+
+
+        h1{
+            color: map-get(variables.$neutral, 'darkblue');
+            margin: 0;
+            padding: variables.$padding-md;
+            padding-bottom: 0;
+            padding-top: 0;
+            text-align: start;
+            font-size: variables.$font-size-lg;
+            position: relative;
+            @media(min-width:1160px){
+                font-size: variables.$font-size-xl;
+            }
+            span.discount{
+                background-color: map-get(variables.$primary, 'paleorange');
+                color: map-get(variables.$primary, 'orange');
+                padding: 0.375rem;
+                font-size: variables.$font-size-sm;
+                border-radius: 0.25rem;
+                margin-left: 1rem;
+                
+                
+            }
+
+            span.formerPrice{
+                color: map-get(variables.$neutral, 'darkgrayblue');
+                font-size: variables.$font-size-sm;
+                padding: 0.375rem;
+                position: absolute;
+                right: 0.875rem;
+                @media (min-width:1160px){
+                    display: none;
+                }
+            }
+        }
+        span.formerPrice.sm{
+            color: map-get(variables.$neutral, 'darkgrayblue');
+            display: none;
+            padding: 0 variables.$padding-md;
+            font-weight: 700;
+            @media (min-width: 1160px){
+                display: block;
+            }
+        }
+
+        p{
+            margin: 0;
+            padding: variables.$base-padding variables.$padding-md;
+            color: map-get(variables.$neutral, 'darkgrayblue');
+            
+        }
+    }
+
+    section.number{
+        padding: variables.$base-padding variables.$padding-md;
+        
+        @media (min-width:1200px){
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            column-gap: 2rem;
+        }
+        div.calculation{
+            img{max-width: auto;}
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-items: center;
+            align-items: center;
+            padding: variables.$padding-lg ;
+            padding-bottom: 1rem;
+            background-color: map-get(variables.$neutral,'lightgrayblue');
+            border-radius: variables.$base-border-radius;
+            @media (max-width: 1200px){
+            margin-bottom: 1.2rem;}
+            span{
+                font-weight: map-get(variables.$font-weights,'bold');
+            }
+
+        }
+        button{
+            img{
+                padding: 0 0.25rem;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,30 @@
+@use 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: map-get(variables.$neutral, 'white');
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: variables.$base-font-size;
+   
+
+    div.heroGrid{
+        @media (min-width:1160px) {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            padding: 0 variables.$base-padding*12;
+            align-items: bottom;
+            column-gap: 2rem;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        @media (min-width:1400px) {
+            column-gap: 4rem;
+        }
+    }
+}

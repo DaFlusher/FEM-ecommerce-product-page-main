@@ -1,0 +1,22 @@
+@use 'variables';
+
+%btn {
+        text-decoration: none;
+        cursor: pointer;
+        display: inline-block;
+        border: none;
+        align-items: center;
+        border-radius: variables.$base-border-radius;
+        padding: variables.$base-padding variables.$base-padding*6;
+        font-weight: map-get(variables.$font-weights, bold);
+        background-color: map-get(variables.$primary, 'orange');
+        color: map-get(variables.$neutral, 'white');
+        width: 100%;
+        text-wrap: nowrap;
+        box-shadow: variables.$base-box-shadow
+        
+}
+
+.btn {
+    @extend %btn;
+}
