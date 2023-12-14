@@ -16,7 +16,7 @@ section.cart{
         border-radius: 0.25rem;
         box-shadow: variables.$box-shadow;}
 
-    @media(min-width:1159px){
+    @media(min-width:1160px){
         display: none;
         min-height: 150px;
         padding: variables.$base-padding variables.$padding-md;
@@ -63,7 +63,7 @@ section.cart{
             grid-template-columns: 40px 2fr 20px;
             align-items: center;
             column-gap: 1rem;
-            grid-auto-rows: minmax(100px,auto);
+            grid-auto-rows: minmax(8rem,auto);
             padding: 0;
             img{
                 max-width: 2.5rem;

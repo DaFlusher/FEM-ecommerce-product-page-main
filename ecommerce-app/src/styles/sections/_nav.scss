@@ -22,13 +22,16 @@ nav{
             display: grid;
             grid-template-columns: 1fr 3fr;
             align-items: center;
+            img.logo{
+                padding-left: 0;
+            }
            
         }
     }
 
    div{
         div.navItem{
-            @media (max-width:1159px){
+            @media (max-width:1160px){
                 display: none;
                 padding: 0;
                 flex-direction: column;
@@ -69,7 +72,7 @@ nav{
             }
             img.close-btn{
                 display: none;
-                @media (max-width:1159px) {
+                @media (max-width:1160px) {
                     display: block;
                     padding: 1rem;
                 }
