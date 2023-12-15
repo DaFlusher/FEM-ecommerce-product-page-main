@@ -3,22 +3,31 @@ import Modal from 'react-modal';
 import close from '../images/icon-close.svg';
 import previous from '../images/icon-previous.svg';
 import next from '../images/icon-next.svg';
+import productone from '../images/image-product-1.jpg';
+import producttwo from '../images/image-product-2.jpg';
+import productthree from '../images/image-product-3.jpg';
+import productfour from '../images/image-product-4.jpg';
+import thumbnailone from '../images/image-product-1-thumbnail.jpg';
+import thumbnailtwo from '../images/image-product-2-thumbnail.jpg';
+import thumbnailthree from '../images/image-product-3-thumbnail.jpg';
+import thumbnailfour from '../images/image-product-4-thumbnail.jpg';
+
 
 
 Modal.setAppElement('#root');
 
 const images = [
-    '/src/images/image-product-1.jpg',
-    '/src/images/image-product-2.jpg',
-    '/src/images/image-product-3.jpg',
-    '/src/images/image-product-4.jpg'
-  ];
+    productone,
+    producttwo,
+    productthree,
+    productfour,
+];
 
   const thumbnails =[
-    '/src/images/image-product-1-thumbnail.jpg',
-    '/src/images/image-product-2-thumbnail.jpg',
-    '/src/images/image-product-3-thumbnailjpg',
-    '/src/images/image-image-product-4-thumbnail.jpg'
+    thumbnailone,
+    thumbnailtwo,
+    thumbnailthree,
+    thumbnailfour
   ]
 
 const imgNav={
