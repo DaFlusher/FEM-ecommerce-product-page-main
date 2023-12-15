@@ -8,17 +8,17 @@ import next from '../images/icon-next.svg';
 Modal.setAppElement('#root');
 
 const images = [
-    'src/images/image-product-1.jpg',
-    'src/images/image-product-2.jpg',
-    'src/images/image-product-3.jpg',
-    'src/images/image-product-4.jpg'
+    '/src/images/image-product-1.jpg',
+    '/src/images/image-product-2.jpg',
+    '/src/images/image-product-3.jpg',
+    '/src/images/image-product-4.jpg'
   ];
 
   const thumbnails =[
-    'src/images/image-product-1-thumbnail.jpg',
-    'src/images/image-product-2-thumbnail.jpg',
-    'src/images/image-product-3-thumbnailjpg',
-    'src/images/image-image-product-4-thumbnail.jpg'
+    '/src/images/image-product-1-thumbnail.jpg',
+    '/src/images/image-product-2-thumbnail.jpg',
+    '/src/images/image-product-3-thumbnailjpg',
+    '/src/images/image-image-product-4-thumbnail.jpg'
   ]
 
 const imgNav={
