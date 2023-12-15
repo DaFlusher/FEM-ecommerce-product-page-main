@@ -4,7 +4,7 @@ import { useState, createContext , useContext} from 'react';
 export const CartNumberContext = createContext();
 import './styles/style.scss';
 import Nav from './Components/Nav';
-import Hero from './Components/Hero';
+import Hero from './Components/LightBox';
 import Main from './Components/Container/Main';
 import Footer from './Components/Footer';
 

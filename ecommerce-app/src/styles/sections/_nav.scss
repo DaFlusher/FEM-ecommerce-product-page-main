@@ -6,7 +6,7 @@ nav{
     align-items: center;
     padding: variables.$padding-sm;
     
-    @media (min-width:1160px){
+    @media (min-width:1159px){
         display: grid;
         grid-template-columns: 4fr 1fr;
         padding: variables.$padding-sm variables.$base-padding*12;
@@ -18,7 +18,7 @@ nav{
     
 
     div.navigation{
-        @media (min-width:1160px){
+        @media (min-width:1159px){
             display: grid;
             grid-template-columns: 1fr 3fr;
             align-items: center;
@@ -31,7 +31,7 @@ nav{
 
    div{
         div.navItem{
-            @media (max-width:1160px){
+            @media (max-width:1159px){
                 display: none;
                 padding: 0;
                 flex-direction: column;
@@ -63,7 +63,7 @@ nav{
                     list-style: none;
                     padding: variables.$padding-md variables.$padding-sm;
                 }
-                @media (min-width:1160px){
+                @media (min-width:1159px){
                     display: flex;
                     justify-content:flex-start;
                     padding: 0;
@@ -72,7 +72,7 @@ nav{
             }
             img.close-btn{
                 display: none;
-                @media (max-width:1160px) {
+                @media (max-width:1159px) {
                     display: block;
                     padding: 1rem;
                 }
@@ -91,7 +91,7 @@ nav{
             padding:0 variables.$base-padding;
         }
         img.hamburger{
-            @media (min-width:1160px){
+            @media (min-width:1159px){
                 display: none;
             }
         }

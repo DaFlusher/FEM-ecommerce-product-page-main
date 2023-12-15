@@ -1,53 +1,138 @@
 @use '../stylecomp/variables';
 
 
-section.light-box{
+
+div{
+    div{
+    img.large{
+        
+        width: clamp(100vw, 100vw, 50vw);
+        height: clamp(50vh, 50vh, 50vh);
+        
+         border-radius:20px;
+         @media (max-width:1159px){
+            border-radius: 0;
+        }
+        @media (min-width:1159px){
+           max-width: 40vw;
+        }
+        
+        }
+    }
+
+    div.hero-web{
+        @media (max-width:1159px){
+            display: none;
+        }
+    }
+
+    div.hero-mobile{
+        button.toggle{
+            top: 30%;
+            transform: translateY(-30%);
+        }
+        @media (min-width:1159px){
+            display: none;
+        }
+    }
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .modal-image-container img {
+    max-width: 100%;
+    max-height: 50vh;
+    border-radius: 0.75rem;
+  }
+  
+  .modal-thumbnails {
+    display: flex;
+    margin-top: 10px;
+
+    img {
+        max-width: 3.125em;
+        max-height: 3.125rem;
+        margin:  0 1rem;
+        cursor: pointer;
+        border-radius: 0.75rem;
+        box-sizing: border-box;
+        &:hover{
+            border: 2px solid map-get(variables.$primary, 'orange');
+            background: white;
+            opacity: 0.5;
+        }
     
-    text-align: center;
-        div.bg{
-            @media (min-width: 1160px){
-                border-radius: 0.75rem;
-                
-            }
-            img{
-                position: absolute;
-                top: 30%;
-                transform: translateY(-30%);
-                background-color: white;
-                border-radius: 50%;
-                min-width: 1rem;
-                height: 0.75rem;
-                padding: 0.75rem;
-                @media (min-width: 1160px){
-                    display: none;
-                }
-            }
-            img.previous{
-                left: 5px;
-
-            }
-
-            img.next{
-                right: 5px;
+      }
+  }
+  
+    div.web{
+       justify-content: space-between;
+        img{
+            min-width: 5rem;
+            max-height: 5rem;
+            @media (max-width: 1159px){
+                display: none;
             }
         }
-            
-            img.thumbnail-flex{
-                max-width: 6.25rem; /* Adjust as needed */
-                max-height: 6.25rem; 
-                cursor: pointer;
-                display: inline-block;
-                margin-top: variables.$base-margin;
-                padding: variables.$padding-sm ;
-                border-radius: 1rem;
-                box-sizing: border-box;
-                &:hover{
-                    border: 2px solid map-get(variables.$primary, 'orange');
-                    transform: scale(0.9);
-                    opacity: 0.5;
-                }
-                @media (max-width: 1160px) {
-                    display: none;
-                  }
-            }
-}
+    }
+   
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-45%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: map-get(variables.$primary, 'orange');
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: white;
+    padding: 0.5rem ;
+    min-width: 36px;
+    &:hover{
+        border: 2px solid map-get(variables.$primary, 'orange');
+        background: white;
+        opacity: 0.5;
+    }
+  }
+  
+  .prev-button {
+    left: 0.5rem;
+    
+  }
+  
+  .next-button {
+    right: 0.5rem;
+    
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75); /* Orange background with 0.5 opacity */
+    z-index: 1000; /* Ensure the overlay is behind the modal content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .close-modal{
+    background-color: none;
+    color: map-get(variables.$primary, 'orange');
+    position: absolute;
+    right: 10px;
+    top: -20px;
+    padding: 1.2rem ;
+    &:hover{
+        color: map-get(variables.$primary, 'orange');
+  }}
