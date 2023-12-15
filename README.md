@@ -71,14 +71,17 @@ Working on the add to cart button functionality. Currently, pressing the plus or
 Customizing the lightbox further as iluustrated in the initial design.
 Using modular patterns for sass styling.
 
+Finally updated the lightbox via react modal component, with some customizations
+
 
 
 ### Useful resources
 
 - [reactjsexample](https://reactjsexample.com/a-customizable-extendable-and-modern-react-lightbox-component/) - This helped me when I was stuck with the lightbox. 
 - [CodeCademy](https://www.codecademy.com/courses/react-101/lessons/your-first-react-component) - They have an amazing react course that really helped broaden my knowledge of the useStae and useEffect hooks and props.
-[w3schools](https://www.w3schoolscom) - Always my go to site.
+-[w3schools](https://www.w3schoolscom) - Always my go to site.
 - [chatgpt](https://www.openai.com) - I recently began using the chatGPT to supercharge my coding experience.
+- [react modal github page]('https://github.com/reactjs/react-modal) - I made use of their modal component.
 
 
 ## Author
@@ -91,4 +94,6 @@ Using modular patterns for sass styling.
 
 ## Acknowledgments
 
-Special thanks to Igor Danchenko, the author of the lightbox component shared via reactjsexample.com
+Special thanks to Igor Danchenko, the author of the initial lightbox component I used, shared via reactjsexample.com
+Special thanks to the authors of the react modal compomnent available on github (link to the repo is available above).
+
