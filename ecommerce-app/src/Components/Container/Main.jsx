@@ -42,7 +42,7 @@ const Main = () => {
     }
    
     const handleDecrease=()=>{
-        if(cartNumber!==0)
+        if(cartNumber!==0 )
         setCartNumber(cartNumber-1);
        
     }
@@ -54,14 +54,16 @@ const Main = () => {
 
     const handleDelete=()=>{
         setCartNumber(0);
-        
+        setIsSubmitted(false);
     }
 
     const handleSubmit=()=>{
-        setIsSubmitted(true);
+        if(cartNumber>0)
+        {setIsSubmitted(true);}
         
     }
 
+   
     
     return ( 
         //Calling the presentational component and passing props to it

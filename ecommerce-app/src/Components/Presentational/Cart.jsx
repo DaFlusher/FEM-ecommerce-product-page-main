@@ -25,7 +25,10 @@ const Cart = (props) => {
                             <div className="flex">
                             <img src={images.thumbnail} alt="sneaker thumbnail"/>
                             
+
+
                             <div className='cart-details'>
+                                
                                     <h5>{props.title}</h5>
                                     <p>${props.price.toFixed(2)} x{cartNumber} <strong>${props.total.toFixed(2)}</strong></p>
                             </div>
