@@ -17,7 +17,7 @@ const Images={
 
 const navMenu=['Collection', 'Men', 'Women', 'About', 'Contact'];
 const Nav = () => {
-    const {cartNumber,setCartNumber,isCartOpen,setIsCartOpen} = useContext(CartNumberContext);
+    const {cartNumber,setCartNumber,isCartOpen,setIsCartOpen, isSubmitted, setIsSubmitted, reset, setReset} = useContext(CartNumberContext);
     const [isMenuOpen, setIsMenuOpen]=useState(false);
 
     const toggleMenu=()=>{
@@ -41,7 +41,7 @@ const Nav = () => {
                 
             <div className='profile'>
                     <span onClick={togleCart}>
-                        <img src={Images.cart} alt="a cart"/><span className='cart-badge'>{cartNumber}</span>
+                        <img src={Images.cart} alt="a cart"/><span className='cart-badge'>{isSubmitted&&cartNumber}</span>
                     </span>
                     <img src={Images.avatar} alt="user avatar" className='avatar' />
             </div>

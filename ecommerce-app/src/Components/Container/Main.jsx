@@ -32,17 +32,19 @@ const Main = () => {
 
     //adding cart state //lifting state to make cartNumber available to nav
 
-    const {cartNumber, setCartNumber} = useContext(CartNumberContext);
+    const {cartNumber, setCartNumber, isSubmitted, setIsSubmitted} = useContext(CartNumberContext);
    
    
 
     const handleIncrease=()=>{
         setCartNumber(cartNumber+1);
+        
     }
    
     const handleDecrease=()=>{
         if(cartNumber!==0)
         setCartNumber(cartNumber-1);
+       
     }
 
     
@@ -52,13 +54,21 @@ const Main = () => {
 
     const handleDelete=()=>{
         setCartNumber(0);
+        
     }
+
+    const handleSubmit=()=>{
+        setIsSubmitted(true);
+        
+    }
+
+    
     return ( 
         //Calling the presentational component and passing props to it
         <>
-            <Sneaker price={price} formerPrice={formerPrice} discount={discount} amount={amount} percent={percent} images={images}  handleDecrease={handleDecrease} handleIncrease={handleIncrease} title={title}/>
+            <Sneaker price={price} formerPrice={formerPrice} discount={discount} amount={amount} percent={percent} images={images}  handleDecrease={handleDecrease} handleIncrease={handleIncrease} title={title} handleSubmit={handleSubmit}/>
 
-            <Cart  price={price} formerPrice={formerPrice} discount={discount} amount={amount} percent={percent}  handleDecrease={handleDecrease} handleIncrease={handleIncrease} title={title} total={total} handleDelete={handleDelete}/>
+            <Cart  price={price} formerPrice={formerPrice} discount={discount} amount={amount} percent={percent}  handleDecrease={handleDecrease} handleIncrease={handleIncrease} title={title} total={total} handleDelete={handleDelete} />
             
         </>
       

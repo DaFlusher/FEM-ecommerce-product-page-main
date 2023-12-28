@@ -20,12 +20,18 @@ function App() {
 
   const [isClicked, setIsClicked]= useState(false);
 
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const [reset, setReset] = useState(false);
+
+
+
   
 
   return (
     <div className='open-cart'>
 
-      <CartNumberContext.Provider value={{cartNumber, setCartNumber, isCartOpen,setIsCartOpen, isClicked,setIsClicked}}>
+      <CartNumberContext.Provider value={{cartNumber, setCartNumber, isCartOpen,setIsCartOpen, isClicked,setIsClicked, isSubmitted, reset, setReset,setIsSubmitted}}>
 
       	  <Nav/>
 

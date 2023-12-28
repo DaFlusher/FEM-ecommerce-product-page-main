@@ -6,7 +6,7 @@ import whitecart from '../../images/cart-white.svg';
 
 const Sneaker = (props) => {
 
-    const {cartNumber,isCartOpen} = useContext(CartNumberContext);
+    const {cartNumber,isCartOpen, isSubmitted, setIsSubmitted} = useContext(CartNumberContext);
     return (
 
         <div className="sneaker">
@@ -26,7 +26,7 @@ const Sneaker = (props) => {
                 <span>{cartNumber}</span>
                 <img src={props.images.plus}  alt="add an item" role='button' onClick={props.handleIncrease} />
                 </div>
-                <button role='button' className="btn"><img src={whitecart} alt="cart" className="cart" style={{maxHeight:'1rem'}}/>Add to cart</button>
+                <button role='button' onClick={props.handleSubmit} className="btn"><img src={whitecart} alt="cart" className="cart" style={{maxHeight:'1rem'}}/>Add to cart</button>
                 
                 
                 
